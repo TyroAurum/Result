@@ -13,7 +13,7 @@ from rest_framework import status
 def apiOverView(request):
     api_urls = {
         'ResultsIT_Total': 'results/IT',
-        'ResultIT': 'result/<int:id>'
+        'ResultIT': 'result/IT/<int:id>'
 
     }
     return Response(api_urls)
