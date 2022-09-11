@@ -19,6 +19,8 @@ class PinkIT(models.Model):
     P21EN102L = models.CharField(max_length=3, blank=False, null=True)
     GPA = models.DecimalField(
         max_digits=4, decimal_places=2, blank=False, null=True)
+    owner = models.ForeignKey(
+        'auth.User', related_name='pinkits', null=True, on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'PinkIT'

@@ -129,9 +129,10 @@ USE_L10N = True
 USE_TZ = True
 
 REST_FRAMEWORK = {
-    "DATE_INPUT_FORMATS": ["%d-%m-%Y"],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
 }
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
