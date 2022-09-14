@@ -9,11 +9,12 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
-from pathlib import Path
-import os
 import django_heroku
 
+import os
+from pathlib import Path
+import dj_database_url
+from django.conf import settings
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -22,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ('SECRET_KEY')
+SECRET_KEY = 'django-insecure-%#u+3tkb_e5kba22w@6#-18o%%3#4us!20p@0#tb!ih+quoy(e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -86,6 +87,8 @@ WSGI_APPLICATION = 'Result.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#database
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -125,8 +128,6 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
-DATE_INPUT_FORMATS = ['%d-%m-%Y']
-
 USE_I18N = True
 
 USE_L10N = True
@@ -139,12 +140,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_WHITELIST = [
-    'https://localhost:3000',
+    'http://localhost:3000',
+    "http://127.0.0.1:3000"
 ]
 
 django_heroku.settings(locals())

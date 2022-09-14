@@ -1,5 +1,2 @@
-release: python manage.py makemigrations
---no-input
-release: python manage.py migrate --no-input
-
-web: gunicorn cmbackend.wsgi
+release: python manage.py migrate
+web: gunicorn Result.wsgi --log-file -
