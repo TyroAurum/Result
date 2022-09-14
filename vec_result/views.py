@@ -1,26 +1,10 @@
 from django.shortcuts import render
 from rest_framework.response import Response
-from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from .models import PinkIT
 from .serializers import PinkITSerializer
 from rest_framework import status
 from rest_framework.views import APIView
 from django.http import Http404
-from django.contrib.auth.models import User
-from rest_framework import generics
-from .serializers import UserSerializer
-from rest_framework import permissions
-from .permissions import IsOwnerOrReadOnly
-
-
-class UserList(generics.ListAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
-
-class UserDetail(generics.RetrieveAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
 
 
 class PinkItTable(APIView):
@@ -68,7 +52,7 @@ class ApiOverView(APIView):
     def get(self, request):
         api_urls = {
             'ResultsIT_Total': 'results/IT',
-            'ResultIT': 'result/IT/<int:id>/',
+            'ResultIT': 'results/IT/<int:id>/',
 
         }
         return Response(api_urls)

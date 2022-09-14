@@ -22,7 +22,3 @@ urlpatterns = [
     path('api/', include('vec_result.urls')),
 
 ]
-
-urlpatterns += [
-    path('api-auth/', include('rest_framework.urls'))
-]

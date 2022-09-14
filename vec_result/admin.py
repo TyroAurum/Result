@@ -6,4 +6,5 @@ from import_export.admin import ImportExportModelAdmin
 
 @admin.register(PinkIT)
 class ResultsData(ImportExportModelAdmin):
-    pass
+    list_filter = ('Name', 'GPA')
+    list_display = ('Name', 'GPA')
