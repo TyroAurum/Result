@@ -2,9 +2,17 @@
     
     .container{
         min-height: 80vh;
-        display: flex;
+        display: block;
+        margin: auto;
         align-items: center;
         justify-content: center;
+    }
+    table{
+        margin: auto;
+    }
+    .stud_caption{
+        margin-top: 10vh;
+        text-align: center;
     }
     th,td{
         border: 1px solid #000000;
@@ -38,12 +46,12 @@
     
 @media screen and (min-width:100px) and (max-width:700px) {
 
-    .container{
-        min-height: 75vh;
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
+.container{
+    min-height: 75vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
 
 
     .stud_caption{
