@@ -1,5 +1,7 @@
 
+@media screen and (min-width:700px) {
 
+    
 
 label{
     padding-right: 30px;
@@ -29,4 +31,12 @@ button{
 }
 button:active{
     background-color: red;
+}
+}
+
+@media screen and (min-width:100px) and (max-width:700px) {
+    label{
+        display: block;
+        font-size: 15px;
+    }
 }
