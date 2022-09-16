@@ -69,7 +69,7 @@ const LoginCard = () => {
     }
 
     return(<>
-        <div className="container">
+        <div className="containeer">
             <Form>
                 <FormGroup>
                     <div className='input1'>
