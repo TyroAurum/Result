@@ -1,7 +1,12 @@
 
+body{
+  background-color: #f1f3f7;
+
+}
+
+@media screen and (min-width:700px) {
 
 .container {
-  background-color: #f1f3f7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,4 +14,17 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(11, 11, 11);
+}
+}
+@media screen and (min-width:100px) and (max-width:700px) {
+  h1{
+    color: black;
+    font-size: 16px;
+  }
+  .container{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
