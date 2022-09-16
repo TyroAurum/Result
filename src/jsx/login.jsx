@@ -24,7 +24,7 @@ const LoginCard = () => {
         setIsSubmit(true);
         const Register = formValues.regno;
         const dob = formValues.dob;
-        const API_URL = `http://localhost:8000/api/results/IT/`;
+        const API_URL = `api/results/IT/`;
         const searchUser = async (Register,dob) => {
             const response = await fetch(`${API_URL}`);
             const information = await response.json();
