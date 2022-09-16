@@ -68,15 +68,14 @@ const ResultCard = () => {
     }
     Student.Year=stuYear;
 
-    function GoBack(){
-        window.history.back()
-    }
+    //function GoBack(){
+    //    window.history.back()
+    //}
 
 
     return(
         <>
         <div className="container">
-        <button onClick={GoBack}>Back</button>
         <ResultCaption student={Student}/>
             <table>
                 <ResultTitle />
