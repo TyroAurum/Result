@@ -11,7 +11,7 @@
         margin: auto;
     }
     .stud_caption{
-        margin-top: 10vh;
+        margin-top: 5vh;
         text-align: center;
     }
     th,td{
@@ -56,16 +56,14 @@
 
     .stud_caption{
         display: block;
-        margin-top: 15vh;
+        margin-top: 5vh;
         margin-left: 5vw;
         margin-right: 5vw;
     }
 
     table{
         display: block;
-        margin-left: 2vw;
-        margin-right: 2vh;
-    }
+        }
 
     th,td{
         border: 1px solid #000000;
