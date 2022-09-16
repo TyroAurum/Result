@@ -85,7 +85,7 @@ const LoginCard = () => {
                     </div>
                     <br/><br/>
                     <div className='input2'>
-                    <Label>Date Of Birth</Label>
+                    <Label>Date of Birth</Label>
                     <Input
                     bsSize='lg'
                     type='date'
