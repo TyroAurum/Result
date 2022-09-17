@@ -11,7 +11,7 @@ root.render(
   <BrowserRouter>
   <Routes>
     <Route exact path='/' element={<App />} />
-    <Route exact path='/loggedin' element={ <ResultCard/>} />
+    <Route exact path='/results/IT' element={ <ResultCard/>} />
   </Routes>
   </BrowserRouter>
 );
