@@ -1,5 +1,4 @@
 @media screen and (min-width:700px) {
-    
     .container{
         min-height: 80vh;
         display: block;
@@ -9,8 +8,13 @@
     }
     table{
         margin: auto;
+        padding-top: 4vh;
+        font-size: 20px;
+        min-width: 60vw;
+        min-height: 50vh;
     }
     .stud_caption{
+        font-size: 18px;
         margin-top: 5vh;
         text-align: center;
     }
@@ -62,7 +66,7 @@
     }
 
     table{
-        display: block;
+        margin: auto;
         }
 
     th,td{
