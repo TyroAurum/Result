@@ -73,7 +73,7 @@ const LoginCard = () => {
             <Form>
                 <FormGroup>
                     <div className='input1'>
-                    <Label>Register No.</Label>
+                    <Label>Register No</Label>
                     <Input 
                     bsSize='lg'
                     type="text"
