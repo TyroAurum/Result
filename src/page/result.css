@@ -35,18 +35,15 @@
     .cgpa_sec:empty{
         background-color: red;
     }
-    .unbordered{
-        background-color: rgb(255, 255, 255);
-    }
     p{
         margin: 0.5px;
         font-family: 'Times New Roman', Times, serif;
     }
     .unbordered{
         border: none;
-        background-color: #f1f3f7;
+    background-color: rgb(255, 255, 255);
     }
-    }
+}
     
 @media screen and (min-width:100px) and (max-width:700px) {
 
