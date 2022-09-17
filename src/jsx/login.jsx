@@ -98,7 +98,7 @@ const LoginCard = () => {
                     <br /><br />
                     <Button  onClick={handleSubmit}>Submit</Button>
                     <Link id='link_btn' to={{
-                        pathname:"/loggedin",
+                        pathname:"/results/IT",
                         state:data}}> </Link>
                 </FormGroup>
             </Form>
